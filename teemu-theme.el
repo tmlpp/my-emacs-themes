@@ -26,7 +26,6 @@
 ;;; Commentary:
 
 ;;; Code:
-
  (deftheme teemu)
  (let ((class '((class color) (min-colors 89)))
        (fg1 "#C8C8ae")
@@ -37,12 +36,12 @@
        (bg2 "#61515f")
        (bg3 "#6f606d")
        (bg4 "#7c6f7b")
-       (builtin "#FF794D") ; orange
-       (keyword "#FF9B6C") ; l-orange
-       (const   "#FE67FF") ; magenta
+       (keyword "#FF794D") ; orange
+       (builtin "#FF9B6C") ; l-orange
+       (func   "#FE67FF") ; magenta
        (comment "#FF8BFF") ; l-magenta
        (str     "#50B877") ; green
-       (func    "#6ECC8F") ; l-green
+       (const    "#6ECC8F") ; l-green
        (var     "#4BB3BF") ; cyan
        (type    "#69C8D4") ; l-cyan
        (warning "#FF67A6") ; pink
