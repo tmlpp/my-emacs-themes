@@ -1,4 +1,4 @@
-;;; teemu-theme.el --- Theme 
+;;; teemu-light-theme.el --- Theme 
 
 ;; Copyright (C) 2016 , Teemu Lappi
 
@@ -14,9 +14,9 @@
 ;; (at your option) any later version.
 
 ;; This program is distributed in the hope that it will be useful,
-;; but WITHOUT ANY WARRANTY; without even the implied warranty of
-;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-;; GNU General Public License for more details.
+;;  ANY WARRANTY; without even the implied warranty of
+;; LITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+;;  Public License for more details.
 
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program. If not, see <http://www.gnu.org/licenses/>.
@@ -24,9 +24,20 @@
 ;; This file is not part of Emacs.
 
 ;;; Commentary:
-
+#B23511
+#8D0800
+#00753A
+#00551E
+#00717D
+#00525E
+#2465BB
+#004899
+#B305B8
+#8F0096
+#CE005C
+#A70040
 ;;; Code:
- (deftheme teemu)
+ (deftheme teemu-light)
  (let ((class '((class color) (min-colors 89)))
        ;; base colors, number indicates LAB lightness
        (hl-dark  "#1C2C2F")
@@ -43,18 +54,18 @@
        (base80   "#C8C8AE") ; fg1
        (hl-light "#D0D0BB")
 
-       (keyword  "#FF794D") ; orange
-       (builtin  "#FF9B6C") ; l-orange
-       (func     "#FE67FF") ; magenta
-       (comment  "#FF8BFF") ; l-magenta
-       (str      "#50B877") ; green
-       (const    "#6ECC8F") ; l-green
-       (var      "#4BB3BF") ; cyan
-       (type     "#69C8D4") ; l-cyan
-       (warning  "#FF67A6") ; pink
-       (warning2 "#FF8DCB")) ; l-pink
+       (red1  "#FF794D") ; orange, keyword
+       (red2  "#FF9B6C") ; l-orange, builtin
+       (magenta1     "#FE67FF") ; magenta, func
+       (magenta1  "#FF8BFF") ; l-magenta, comment
+       (green1      "#50B877") ; green, str
+       (green2    "#6ECC8F") ; l-green, const
+       (cyan1      "#4BB3BF") ; cyan, var
+       (cyan2     "#69C8D4") ; l-cyan, type
+       (pink1  "#FF67A6") ; pink, warning
+       (pink2 "#FF8DCB")) ; l-pink, warning2
    (custom-theme-set-faces
-   'teemu
+   'teemu-light
         `(default ((,class (:background ,base21 :foreground ,base80))))
         `(font-lock-builtin-face ((,class (:foreground ,builtin))))
         `(font-lock-comment-face ((,class (:foreground ,base51))))
@@ -269,10 +280,10 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'teemu)
+(provide-theme 'teemu-light)
 
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
 
-;;; teemu-theme.el ends here
+;;; teemu-light-theme.el ends here
