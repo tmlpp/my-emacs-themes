@@ -28,18 +28,18 @@
 ;;; Code:
  (deftheme teemu)
  (let ((class '((class color) (min-colors 89)))
-       (hl-light "#D0D0BB")
-       (base80 "#C8C8AE") ; fg1
-       (base74 "#B6B8A2") ; fg2
-       (base68 "#A4A895") ; fg3
-       (base62 "#939989") ; fg4
-       (base56 "#828A7D")
-       (base51 "#717B71")
-       (base45 "#616C66")
-       (base39 "#515E5A") ; bg4
-       (base33 "#41504F") ; bg3
-       (base27 "#324344") ; bg2
        (base21 "#223639") ; bg1
+       (base27 "#324344") ; bg2
+       (base33 "#41504F") ; bg3
+       (base39 "#515E5A") ; bg4
+       (base45 "#616C66")
+       (base51 "#717B71") ; comment
+       (base56 "#828A7D")
+       (base62 "#939989") ; fg4
+       (base68 "#A4A895") ; fg3
+       (base74 "#B6B8A2") ; fg2
+       (base80 "#C8C8AE") ; fg1
+       (hl-light "#D0D0BB")
        (hl-dark "#1C2C2F")
        (keyword "#FF794D") ; orange
        (builtin "#FF9B6C") ; l-orange
