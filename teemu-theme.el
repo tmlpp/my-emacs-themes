@@ -38,15 +38,15 @@
        (bg3 "#6f606d")
        (bg4 "#7c6f7b")
        (builtin "#FF794D") ; orange
-       (keyword "#FF9B6C") ; orange
-       (const   "#FE67FF") ; green
-       (comment "#FF8BFF") ; green
-       (func    "#6ECC8F") ; cyan
-       (str     "#50B877") ; cyan
-       (type    "#69C8D4") ; magenta
-       (var     "#4BB3BF") ; magenta
+       (keyword "#FF9B6C") ; l-orange
+       (const   "#FE67FF") ; magenta
+       (comment "#FF8BFF") ; l-magenta
+       (str     "#50B877") ; green
+       (func    "#6ECC8F") ; l-green
+       (var     "#4BB3BF") ; cyan
+       (type    "#69C8D4") ; l-cyan
        (warning "#FF67A6") ; pink
-       (warning2 "#FF8DCB")) ; pink
+       (warning2 "#FF8DCB")) ; l-pink
    (custom-theme-set-faces
    'teemu
         `(default ((,class (:background ,bg1 :foreground ,fg1))))
