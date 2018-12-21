@@ -1,12 +1,11 @@
 ;;; teemu-theme.el --- Theme 
 
-;; Copyright (C) 2016 , Teemu Lappi
+;; Copyright (C) 2018 , Teemu Lappi
 
 ;; Author: Teemu Lappi
 ;; Version: 0.1
 ;; Package-Requires: ((emacs "24"))
 ;; Created with ThemeCreator, https://github.com/mswift42/themecreator.
-
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -45,12 +44,12 @@
 
        (keyword  "#FF794D") ; orange
        (builtin  "#FF9B6C") ; l-orange
-       (func     "#FE67FF") ; magenta
-       (comment  "#FF8BFF") ; l-magenta
        (str      "#50B877") ; green
        (const    "#6ECC8F") ; l-green
        (var      "#4BB3BF") ; cyan
        (type     "#69C8D4") ; l-cyan
+       (func     "#FE67FF") ; magenta
+       (comment  "#FF8BFF") ; l-magenta
        (warning  "#FF67A6") ; pink
        (warning2 "#FF8DCB")) ; l-pink
    (custom-theme-set-faces
