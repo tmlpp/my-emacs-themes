@@ -1,4 +1,4 @@
-;;; teemu-theme.el --- Theme 
+;;; tmlpp-theme.el --- Theme 
 
 ;; Copyright (C) 2018 , Teemu Lappi
 
@@ -25,7 +25,7 @@
 ;;; Commentary:
 
 ;;; Code:
- (deftheme teemu)
+ (deftheme tmlpp)
  (let ((class '((class color) (min-colors 89)))
        ;; base colors, number indicates LAB lightness
        (hl-dark  "#1C2C2F")
@@ -53,7 +53,7 @@
        (warning  "#FF67A6") ; pink
        (warning2 "#FF8DCB")) ; l-pink
    (custom-theme-set-faces
-   'teemu
+   'tmlpp
         `(default ((,class (:background ,base21 :foreground ,base80))))
         `(font-lock-builtin-face ((,class (:foreground ,builtin))))
         `(font-lock-comment-face ((,class (:foreground ,base51))))
@@ -268,10 +268,10 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'teemu)
+(provide-theme 'tmlpp)
 
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
 
-;;; teemu-theme.el ends here
+;;; tmlpp-theme.el ends here
