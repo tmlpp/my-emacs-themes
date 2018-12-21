@@ -1,0 +1,6 @@
+* tmlpp emacs theme
+Work in progress, still a mess.
+
+Motivation for this theme is the fact that I had hard time finding a theme that:
+1. I generally like
+2. Works well with my personal case of color blindness
