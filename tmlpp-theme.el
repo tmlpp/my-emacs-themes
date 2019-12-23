@@ -121,12 +121,21 @@
         `(org-verse ((,class (:inherit org-block :slant italic))))
         `(org-warning ((,class (:foreground ,builtin))))
 
+	`(org-habit-clear-face ((,class (:background ,base33 :foreground ,base21)))) ; days on which a task shouldn’t be done yet.
+	`(org-habit-clear-future-face ((,class (:inherit org-habit-clear-face)))) ; future days on which a task shouldn’t be done yet.
+	`(org-habit-ready-face ((,class (:background ,base51 :foreground ,base21)))) ; days on which a task should start to be done.
+	`(org-habit-ready-future-face ((,class (:inherit org-habit-ready-face)))) ; days on which a task should start to be done.
+	`(org-habit-alert-face ((,class (:background ,base62 :foreground ,base21)))) ; days on which a task is due.
+	`(org-habit-alert-future-face ((,class (:inherit org-habit-alert-face)))) ; days on which a task is due.
+	`(org-habit-overdue-face ((,class (:background ,builtin :foreground ,base21)))) ; days on which a task is overdue.
+	`(org-habit-overdue-future-face ((,class (:inherit org-habit-overdue-face)))) ; days on which a task is overdue.
+
 	; elfeed
         `(elfeed-search-date-face ((,class (:foreground ,builtin))))
         `(elfeed-search-feed-face ((,class (:foreground ,const))))
         `(elfeed-search-tag-face ((,class (:foreground ,var))))
-        `(elfeed-search-title-face ((,class (:foreground ,base51))))
-        `(elfeed-search-unread-title-face ((,class (:foreground ,base80))))
+        `(elfeed-search-title-face ((,class (:family "IBM Plex Sans" :weight regular :foreground ,base51))))
+        `(elfeed-search-unread-title-face ((,class (:family "IBM Plex Sans" :weight regular :foreground ,base80))))
 
 	`(font-latex-bold-face ((,class (:foreground ,type))))
 	`(font-latex-italic-face ((,class (:foreground ,var :italic t))))
