@@ -38,15 +38,14 @@
       (base08   "#BABABA")
       (base09   "#D1D1D1")
       (base10   "#E8E8E8")
- 
-      (const  "#FF596B") ; coral pink
-      (keyword    "#FF905B") ; orangish
-      (str      "#DECE16") ; ugly yellow
-      (func     "#2F9BFF") ; azure
-      (builtin  "#AEA7FF") ; periwinkle blue
-      (type     "#ECB6FF") ; light lavender
-      (warning  "#22ad6a") ; jade green
-      (var      "#27c8b0") ; turquoise
+      (const    "#FF6A7A") ; faded red
+      (keyword  "#FF9663") ; dark peach
+      (str      "#D6cd47") ; dull yellow
+      (builtin  "#35B276") ; bluey green
+      (warning  "#27C8B0") ; turquoise
+      (type     "#5CA4E7") ; sky blue
+      (var      "#B2ABFF") ; periwinkle blue
+      (func     "#EDBBFF") ; light lavender
       (comment  "#7a7a7a")
       ) 
   (custom-theme-set-faces
