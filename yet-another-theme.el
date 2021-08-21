@@ -25,20 +25,20 @@
 ;;; Commentary:
 
 ;;; Code:
-(deftheme another)
+(deftheme yet-another)
 (let ((class '((class color) (min-colors 89)))
-      (base00   "#000000")
-      (base01   "#2D2D2D")
-      (base02   "#3F3F3F")
-      (base03   "#525252")
-      (base04   "#656565")
-      (base05   "#7A7A7A")
-      (base06   "#8F8F8F")
-      (base07   "#A4A4A4")
-      (base08   "#BABABA")
-      (base09   "#D1D1D1")
-      (base10   "#BABABA")
-      ;(base10   "#E8E8E8")
+      (base00   "#25281c")
+      (base01   "#323427")
+      (base02   "#3f4233")
+      (base03   "#4d503f")
+      (base04   "#5b5e4b")
+      (base05   "#696d58")
+      (base06   "#787c66")
+      (base07   "#878b73")
+      (base08   "#979b81")
+      (base09   "#a6ab8f")
+      (base10   "#b6bb9d")
+
       (const    "#FF6A7A") ; faded red
       (keyword  "#FF9663") ; dark peach
       (str      "#D6cd47") ; dull yellow
@@ -47,10 +47,10 @@
       (type     "#5CA4E7") ; sky blue
       (var      "#B2ABFF") ; periwinkle blue
       (func     "#EDBBFF") ; light lavender
-      (comment  "#7a7a7a")
+      (comment  "#787c66")
       ) 
   (custom-theme-set-faces
-   'another
+   'yet-another
    `(default ((,class (:background ,base00 :foreground ,base10))))
    `(font-lock-builtin-face ((,class (:foreground ,builtin))))
    `(font-lock-comment-face ((,class (:foreground ,comment :slant italic))))
@@ -64,11 +64,11 @@
    `(font-lock-type-face ((,class (:foreground ,type ))))
    `(font-lock-variable-name-face ((,class (:foreground ,var))))
    `(font-lock-warning-face ((,class (:foreground ,warning :background ,base01))))
-   `(region ((,class (:background ,base01))))
+   `(region ((,class (:background ,base02))))
    `(highlight ((,class (:foreground ,base08 :background ,base03))))
    `(highlight-indentation-face ((,class (:foreground ,base08 :background ,base03))))
    `(hl-line ((,class (:background  ,base01))))
-   `(fringe ((,class (:background ,base01 :foreground ,base06))))
+   `(fringe ((,class (:background ,base00 :foreground ,base00))))
    `(cursor ((,class (:background ,base10))))
    ;; `(show-paren-match-face ((,class (:background ,base10))))
    `(show-paren-match ((,class (:background ,base03))))
@@ -84,7 +84,8 @@
    `(link ((,class (:foreground ,var :underline t))))
 
    ;; org-mode
-   `(org-checkbox-statistics-todo ((,class (:foreground ,comment))))
+   `(org-checkbox-statistics-todo ((,class (:foreground ,keyword))))
+   `(org-checkbox-statistics-done ((,class (:foreground ,base07))))
    `(org-code ((,class (:foreground ,base09))))
    `(org-ellipsis ((,class (:underline nil))))
    `(org-hide ((,class (:foreground ,base00 :background ,base00))))
@@ -103,7 +104,7 @@
    `(org-done ((,class (:bold t :foreground ,warning))))
    `(org-footnote  ((,class (:underline t :foreground ,base06))))
    `(org-headline-done ((,class (:foreground ,base07))))
-   `(org-level-1 ((,class (:foreground ,base10))))
+   `(org-level-1 ((,class (:foreground ,base10 :weight bold))))
    `(org-level-2 ((,class (:inherit org-level-1))))
    `(org-level-3 ((,class (:inherit org-level-1))))
    `(org-level-4 ((,class (:inherit org-level-1))))
@@ -285,7 +286,7 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'another)
+(provide-theme 'yet-another)
 
 ;; Local Variables:
 ;; no-byte-compile: t
