@@ -27,17 +27,17 @@
 ;;; Code:
 (deftheme yet-another)
 (let ((class '((class color) (min-colors 89)))
-      (base00   "#25281c")
-      (base01   "#323427")
-      (base02   "#3f4233")
-      (base03   "#4d503f")
-      (base04   "#5b5e4b")
-      (base05   "#696d58")
-      (base06   "#787c66")
-      (base07   "#878b73")
-      (base08   "#979b81")
-      (base09   "#a6ab8f")
-      (base10   "#b6bb9d")
+      (base00   "#1A1A25")
+      (base01   "#292832")
+      (base02   "#39373F")
+      (base03   "#49474C")
+      (base04   "#5A575A")
+      (base05   "#6B6868")
+      (base06   "#7D7A76")
+      (base07   "#8F8C85")
+      (base08   "#A29E94")
+      (base09   "#B5B1A4")
+      (base10   "#C9C4B3")
 
       (const    "#FF6A7A") ; faded red
       (keyword  "#FF9663") ; dark peach
@@ -47,7 +47,7 @@
       (type     "#5CA4E7") ; sky blue
       (var      "#B2ABFF") ; periwinkle blue
       (func     "#EDBBFF") ; light lavender
-      (comment  "#787c66")
+      (comment  "#7D7A76")
       ) 
   (custom-theme-set-faces
    'yet-another
